@@ -1,0 +1,171 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    background-color:#0b1318;
+    
+}
+
+body{
+    background:url('../images/background/bg_head.jpg') repeat-x top center;
+    min-height:500px;
+    font:14px/1.3 'Segoe UI',Arial, sans-serif;
+    color:#888;
+    padding:10px;
+}
+
+/*-------------------------
+    Demo Page Styles
+--------------------------*/
+
+
+h1,h2{
+    color: #fff;
+    line-height: 1;
+    background-color: rgba(7,18,24,0.7);
+/*    font-family: 'Segoe UI Light','Segoe UI',Arial,sans-serif;*/
+    font-weight: normal;
+    margin: 0 auto;
+    position: absolute;
+/*    left: 50%;*/
+    margin-left: -446px;
+}
+
+h1{
+    font-size: 25px;
+    padding: 10px 25px 12px;
+    top: 0;
+		left: 50%;
+}
+
+h2{
+    font-size: 13px;
+    padding: 4px 25px 10px;
+    top: 102px;
+		left: 50%;
+}
+
+header{
+    display:block;
+    margin-top:50px;
+/*    position:relative;*/
+}
+
+nav{
+    display: block;
+    margin: 300px auto 0;
+    text-align: center;
+    width: 650px;
+}
+
+footer{
+    color: #BBBBBB;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 60px 20px 0;
+    text-align: center;
+    display:block;
+}
+
+footer b{
+    color: #888888;
+    display: block;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+a, a:visited {
+    text-decoration:none;
+    outline:none;
+    color:#54a6de;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/*here is the necessary css*/
+
+header{
+	display:block;
+	margin-top:50px;
+	position:relative;
+}
+
+/*h1{
+	font-size: 36px;
+	padding: 5px 15px 10px;
+	top: 0;
+}
+*/
+body {
+	font-family: 'Terminal Dosis Light', Arial, sans-serif;
+}
+
+header h1 {
+	font-size:80px;
+/*	padding:0px 0px 20px 20px;*/
+}
+
+/*second header*/
+#video_surface {
+	position: relative;
+/*	height: 270px;
+	width: 480px;
+*/
+	height: 480px;
+	width: 720px;
+	margin: 0 auto;
+}
+
+#video_surface video {
+	position: absolute;
+	left: 0;
+	top: 220px; /*150px*/
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	-ms-transition: opacity 1s ease-in-out;		
+	transition: opacity 1s ease-in-out;
+}
+
+#navigator_buttons_surface {
+	position: absolute;
+	left: 730px;
+	top: 170px;
+/*	top: 100px; */
+}
+#end_buttons {
+	position: absolute;
+	left: 730px;
+	top: 170px;	
+}
+
+#video_surface video.transparent {
+	opacity: 0;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+
+h4 .remainder {
+	background-color: red;
+}
+
+/*480*/
+
+a.bf_close{
+	top:780px;
+	left:50%;
+	background:transparent url(../images/close.png) no-repeat center center;
+	position:fixed;
+	width:40px;
+	height:40px;
+	cursor:pointer;
+	opacity:0.3;
+	z-index:999;
+}
+.bf_nav a:hover, a.bf_close:hover{
+	opacity:0.9;
+}
